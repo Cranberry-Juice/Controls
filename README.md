@@ -3,7 +3,8 @@ Simulink Lander Models
 Highest version numbers is current version.
 
 init_values.m file holds all variables used in the simulink model.
-Run init_values.m before running simulink.
+init_values.m set to run upon opening project.
+
 Any new variables must added to the init_values.m script so all future
 simulink files have access to the same numbers.
 
