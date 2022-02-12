@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "http://www.web3d.org/specifications/x3d-3.3.dtd">
+<X3D profile='Immersive' version='3.3' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+<head>
+</head>
+<Scene>
+<Transform DEF='LanderFrame'  translation='0 1 0'>
+  <Shape>
+    <Appearance>
+      <Material shininess='0.5' diffuseColor='0.2 0.2 0.2' ambientIntensity='0.4'>
+      </Material>
+    </Appearance>
+    <Box size='0.4 0.4 0.5'>
+    </Box>
+  </Shape>
+</Transform>
+<Viewpoint DEF='ME_EYES'  fieldOfView='0.7854' position='0 1.57 5' retainUserOffsets='true'>
+</Viewpoint>
+<Transform DEF='Ground' >
+  <Shape>
+    <Appearance>
+      <TextureTransform scale='8 8'>
+      </TextureTransform>
+      <ImageTexture url='"*sl3dlib/objects/Textures/General/Gravel.jpg" '>
+      </ImageTexture>
+      <Material shininess='0.5' diffuseColor='1 1 1' ambientIntensity='0.4'>
+      </Material>
+    </Appearance>
+    <Box size='40 0.05 40'>
+    </Box>
+  </Shape>
+</Transform>
+<SpotLight DEF='SUN'  location='0 3 2' cutOffAngle='1.570796' beamWidth='0.85' intensity='8'>
+</SpotLight>
+<Background groundAngle='0.9 1.5 1.57' groundColor='0 0.8 0 0.174249 0.82 0.187362 0.467223 0.82 0.445801 0.621997 0.67 0.600279' skyAngle='0.1 1.2 1.57' skyColor='0.76238 0.8 0.1427 0.277798 0.219779 0.7 0.222549 0.390234 0.7 0.60094 0.662637 0.69'>
+</Background>
+</Scene>
+</X3D>
