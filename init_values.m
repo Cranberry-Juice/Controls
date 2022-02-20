@@ -25,8 +25,10 @@ Izz = 2.323E+05;
 % Dummy values
 m_iFuel = 10; %Kg mass Fuel
 m_dot = 0; %kg/s mass flow rate of fuel.
-cmFuel_cmL = 0.2; % m distance between cm of fuel to  cmL Under to find moments
-
+cmFuel_cmL = 0.2; % m distance between C.M of fuel to  C.M of Lander. 
+                  % In Body Fixed Frame. 
+k_Fuel = 3.5e3; % Spring Coefficient of mass spring damper approx for fuel
+c_Fuel = 2.806e2; % Damper Coeff "   "
 
 % Dependant Variables
 W_lander = M_lander * g; % N weight of lander
@@ -39,3 +41,22 @@ I = [Ix_
      Iy_
      Iz_];
 I = I .* oz2Kg;
+
+
+% Vectors
+% NORTH EAST DOWN CONVENTION. 
+% X POSITIVE FORWARD, Y POSITIVE RIGHT, Z POSITIVE DOWN.    
+% 
+% All caps denotes vectors.
+W_LANDER = [0
+            0
+            W_lander]; % In inertial frame
+
+
+
+% Dummy Vectors
+CM_FUEL_b = [0
+           0
+           -cmFuel_cmL]; % Position Vector. Center of mass of Fuel in body frame
+
+
