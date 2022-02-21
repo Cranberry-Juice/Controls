@@ -2,6 +2,10 @@
 oz2Kg  = 0.0283495231; % Ouncemass to Kilogram conversion factor
 lb2N = 4.44822; % Pounds to Newton conversion factor
 
+NED2VrSink = [1  0  0
+              0  0  -1
+              0  1  0]; % Coordinate transform from NED to VrSink Coords
+
 % constants
 g        = 9.81;
 
@@ -58,5 +62,7 @@ W_LANDER = [0
 CM_FUEL_b = [0
            0
            -cmFuel_cmL]; % Position Vector. Center of mass of Fuel in body frame
+
+mag_CM_Fuel_b = norm(CM_FUEL_b);
 
 
