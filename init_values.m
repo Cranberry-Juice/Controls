@@ -5,6 +5,10 @@ lb2N = 4.44822; % Pounds to Newton conversion factor
 VRfromNED_cordT = [ 0  1  0
                     0  0 -1
                    -1  0  0]; % Coordinate transform from NED to VrSink Coords
+body_VR_fromEarthVR = [1 0 0
+                       0 0 -1
+                       0 1 0]; % Coordinate Transform, Body in Vr from Earth Vr
+
 
 % constants
 g        = 9.81;
