@@ -2,9 +2,9 @@
 oz2Kg  = 0.0283495231; % Ouncemass to Kilogram conversion factor
 lb2N = 4.44822; % Pounds to Newton conversion factor
 
-NED2VrSink = [1  0  0
-              0  0  -1
-              0  1  0]; % Coordinate transform from NED to VrSink Coords
+VRfromNED_cordT = [ 0  1  0
+                    0  0 -1
+                   -1  0  0]; % Coordinate transform from NED to VrSink Coords
 
 % constants
 g        = 9.81;
@@ -45,6 +45,10 @@ I = [Ix_
      Iy_
      Iz_];
 I = I .* oz2Kg;
+
+
+%Dummy Value
+symmetricalI = I .* eye(3); % Symmetrical Moment of Intertia To test pure rotations
 
 
 % Vectors
