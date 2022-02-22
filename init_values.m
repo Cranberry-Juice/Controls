@@ -73,4 +73,23 @@ CM_FUEL_b = [0
 
 mag_CM_Fuel_b = norm(CM_FUEL_b);
 
+%% Scripts in matlab function blocks
+function Thrust_unit_vec = fcn(phi, theta)
+C_phi = [1     0        0
+         0 cos(phi) sin(phi) 
+         0 -sin(phi) cos(phi)];
+C_theta = [cos(theta) 0 -sin(theta)
+           0          1           0
+           sin(theta) 0 cos(theta)];
 
+C_trans = C_theta * C_phi;
+
+Thrust_unit_vec = C_trans.' * [0 0 -1];
+
+end
+
+function rotMatrix = fcn(u)
+
+rotMatrix = eul2rotm(u, 'XYZ')
+
+end
