@@ -38,6 +38,12 @@ cmFuel_cmL = 0.2; % m distance between C.M of fuel to  C.M of Lander.
 k_Fuel = 3.5e3; % Spring Coefficient of mass spring damper approx for fuel
 c_Fuel = 2.806e2; % Damper Coeff "   "
 
+% ~~~ In body fixed frame
+l_TV = 0.3; % Distance form CM land to acting point of thrust vector
+dev_x_TV = 0; % Deviation from true vertical x
+dev_y_TV = 0 ; % "  " y
+L_TV = [dev_x_TV dev_y_TV l_TV];
+
 % Dependant Variables
 W_lander = M_lander * g; % N weight of lander
 
@@ -74,22 +80,22 @@ CM_FUEL_b = [0
 mag_CM_Fuel_b = norm(CM_FUEL_b);
 
 %% Scripts in matlab function blocks
-function Thrust_unit_vec = fcn(phi, theta)
-C_phi = [1     0        0
-         0 cos(phi) sin(phi) 
-         0 -sin(phi) cos(phi)];
-C_theta = [cos(theta) 0 -sin(theta)
-           0          1           0
-           sin(theta) 0 cos(theta)];
-
-C_trans = C_theta * C_phi;
-
-Thrust_unit_vec = C_trans.' * [0 0 -1];
-
-end
-
-function rotMatrix = fcn(u)
-
-rotMatrix = eul2rotm(u, 'XYZ')
-
-end
+% function Thrust_unit_vec = fcn(phi, theta)
+% C_phi = [1     0        0
+%          0 cos(phi) sin(phi) 
+%          0 -sin(phi) cos(phi)];
+% C_theta = [cos(theta) 0 -sin(theta)
+%            0          1           0
+%            sin(theta) 0 cos(theta)];
+% 
+% C_trans = C_theta * C_phi;
+% 
+% Thrust_unit_vec = C_trans.' * [0 0 -1];
+% 
+% end
+% 
+% function rotMatrix = fcn(u)
+% 
+% rotMatrix = eul2rotm(u, 'XYZ')
+% 
+% end
