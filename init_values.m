@@ -31,6 +31,7 @@ Izz = 2.323E+05;
 
 
 % Dummy values
+% 50 pounds of fuel
 m_iFuel = 10; %Kg mass Fuel
 m_dot = 0; %kg/s mass flow rate of fuel.
 cmFuel_cmL = 0.2; % m distance between C.M of fuel to  C.M of Lander. 
