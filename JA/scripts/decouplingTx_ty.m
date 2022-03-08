@@ -19,6 +19,7 @@ xlabel("T_y (T_y/W)")
 ylabel("\theta")
 zlabel('T_x')
 
+
 Thrust = sqrt(Tx.^2 + TY.^2);
 
 figure
