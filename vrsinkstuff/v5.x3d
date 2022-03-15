@@ -43,7 +43,7 @@
     </IndexedFaceSet>
   </Shape>
 </Transform>
-<Transform DEF='Lander'  scale='0.0009 0.0009 0.0009' center='0 0.75 0'>
+<Transform DEF='Lander'  scale='0.0009 0.0009 0.0009' rotation='0 1 0 0' center='0 0.75 0'>
   <Shape DEF='node_Shape_0001' >
     <Appearance>
       <ImageTexture url='"/Users/josepfamador/RPL_controls/vrsinkstuff/customTextures/metal.png" '>
