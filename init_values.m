@@ -18,16 +18,21 @@ T_min = 100 * lb2N; % N Min Thrust of Engine
 T_max = 250 * lb2N; % N Max Thrust of Engine
 
 % Inertia Values Ounce Mass, Converted to kg later
-Ixx = 3.099E+05;
-Ixy = -0.033;
-Ixz = 53.236;
-Iyx = -0.033;
-Iyy = 3.135E+05;
-Iyz = -3.933;
-Izx = 53.236;
-Izy = -3.933;
-Izz = 2.323E+05;
+% Ixx = 3.099E+05;
+% Ixy = -0.033;
+% Ixz = 53.236;
+% Iyx = -0.033;
+% Iyy = 3.135E+05;
+% Iyz = -3.933; % Old
+% Izx = 53.236;
+% Izy = -3.933;
+% Izz = 2.323E+05;
 
+% Kg m^2
+Ixx =5.816;
+Iyy = 5.735;
+Izz = 4.289;
+% From fusion with updated cm values. Products of inertia are negligible
 
 
 % Dummy values
@@ -48,15 +53,16 @@ L_TV = [dev_x_TV dev_y_TV l_TV];
 % Dependant Variables
 W_lander = M_lander * g; % N weight of lander
 
-Ix_ = [Ixx Ixy Ixz];
-Iy_ = [Iyx Iyy Iyz];
-Iz_ = [Izx Izy Izz];
-
-I = [Ix_
-     Iy_
-     Iz_];
-I = I .* oz2Kg;
-
+% Old
+% Ix_ = [Ixx Ixy Ixz];
+% Iy_ = [Iyx Iyy Iyz];
+% Iz_ = [Izx Izy Izz];
+% 
+% I = [Ix_
+%      Iy_
+%      Iz_];
+% I = I .* oz2Kg;
+I = [Ixx 0 0; 0 Iyy 0; 0 0  Izz];
 
 %Dummy Value
 symmetricalI = I .* eye(3); % Symmetrical Moment of Intertia To test pure rotations

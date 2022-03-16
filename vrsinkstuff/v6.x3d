@@ -38,5 +38,29 @@
     </IndexedFaceSet>
   </Shape>
 </Transform>
+<Anchor>
+</Anchor>
+<Transform USE='Lander' >
+</Transform>
+<Transform DEF='Thrust'  translation='0 0.4 0' scaleOrientation='0 1 0 0' bboxCenter='0 1 0'>
+  <Shape>
+    <Appearance>
+      <Material>
+      </Material>
+    </Appearance>
+    <Cone height='0.3' bottomRadius='0.04'>
+    </Cone>
+  </Shape>
+</Transform>
+<Transform DEF='Point'  translation='0 0.4 0'>
+  <Shape>
+    <Appearance>
+      <Material>
+      </Material>
+    </Appearance>
+    <Sphere radius='0.001'>
+    </Sphere>
+  </Shape>
+</Transform>
 </Scene>
 </X3D>
