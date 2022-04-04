@@ -86,6 +86,9 @@ CM_FUEL_b = [0
 
 mag_CM_Fuel_b = norm(CM_FUEL_b);
 
+% Other scripts
+pendulum2Dss % Define K proportional control value
+
 %% Scripts in matlab function blocks
 % function Thrust_unit_vec = fcn(phi, theta)
 % C_phi = [1     0        0
