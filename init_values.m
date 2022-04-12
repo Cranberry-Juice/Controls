@@ -66,7 +66,8 @@ I = [Ixx 0 0; 0 Iyy 0; 0 0  Izz];
 
 %Dummy Value
 symmetricalI = I .* eye(3); % Symmetrical Moment of Intertia To test pure rotations
-
+linDrag = 0.01; % Translational Linear Drag Coefficient. Assumed.
+angDrag = 0.01; % Rotational linear drag coefficient. Assumed.
 
 % Vectors
 % NORTH EAST DOWN CONVENTION. 
