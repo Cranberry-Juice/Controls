@@ -45,7 +45,7 @@ k_Fuel = 3.5e3; % Spring Coefficient of mass spring damper approx for fuel
 c_Fuel = 2.806e2; % Damper Coeff "   "
 
 % ~~~ In body fixed frame
-l_TV = 0.3; % Distance form CM land to acting point of thrust vector
+l_TV = 0.424; % Distance form CM land to acting point of thrust vector Updated 4/14/22
 dev_x_TV = 0; % Deviation from true vertical x
 dev_y_TV = 0 ; % "  " y
 L_TV = [dev_x_TV dev_y_TV l_TV];
@@ -84,6 +84,9 @@ W_LANDER = [0
 CM_FUEL_b = [0
            0
            -cmFuel_cmL]; % Position Vector. Center of mass of Fuel in body frame
+
+% Center of Tank is 0.184m above center of mass of Lander. Updated
+% 4/14/22
 
 mag_CM_Fuel_b = norm(CM_FUEL_b);
 
