@@ -104,6 +104,6 @@ R = 0.10;
 %Kalman Filter
 
 xState = ss(AX, BX, C, D);
-ySatte = ss(AY, BY, C, D)
+ySatte = ss(AY, BY, C, D);
 KX = lqr(AX, BX, Q, R);
 KY = lqr(AY, BY, Q, R);
