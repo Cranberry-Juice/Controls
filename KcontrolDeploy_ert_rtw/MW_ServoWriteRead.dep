@@ -1,0 +1,44 @@
+MW_ServoWriteRead.o: \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_ServoWriteRead.cpp \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/include/MW_ServoWriteRead.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/libraries/Servo/src/Servo.h \
+ /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/libraries/Servo/src/avr/ServoTimers.h
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/include/MW_ServoWriteRead.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/libraries/Servo/src/Servo.h:
+
+/Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/3P.instrset/arduinoide.instrset/Arduino.app/Contents/Java/libraries/Servo/src/avr/ServoTimers.h:
