@@ -2,7 +2,7 @@
 ## Makefile generated for component 'KcontrolDeploy'. 
 ## 
 ## Makefile     : KcontrolDeploy.mk
-## Generated on : Sun Apr 17 02:46:04 2022
+## Generated on : Wed Apr 20 17:31:29 2022
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/KcontrolDeploy.elf
 ## Product type : executable
 ## 
@@ -25,7 +25,7 @@ START_DIR                 = /Users/josepfamador/RPL_controls
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
-TGT_FCN_LIB               = None
+TGT_FCN_LIB               = ISO_C
 MODEL_HAS_DYNAMICALLY_LOADED_SFCNS = 0
 RELATIVE_PATH_TO_ANCHOR   = ..
 C_STANDARD_OPTS           = 
@@ -207,8 +207,8 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DMW_TIMERID=2 -DMW_PRESCALAR=256 -DMW_TIMERCOUNT=6 -DMW_SCHEDULERCOUNTER=5 -DARDUINO_NUM_SERIAL_PORTS=1 -D_RTT_BAUDRATE_SERIAL0_=9600 -D_RTT_ANALOG_REF_=0 -D_RTT_NUMSERVOS_=5
-DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
+DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -D_MW_ARDUINO_LOOP_=1 -DMW_ARDUINO_STEP_SIZE=20000 -DMW_ARDUINO_MICROS -DARDUINO_NUM_SERIAL_PORTS=1 -D_RTT_BAUDRATE_SERIAL0_=9600 -D_RTT_ANALOG_REF_=0 -D_RTT_NUMSERVOS_=5
+DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=0 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=1
 DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DEXIT_FAILURE=1 -DEXTMODE_DISABLEPRINTF -DEXTMODE_DISABLETESTING -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DSTACK_SIZE=64 -DRT
@@ -220,7 +220,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_arduinoI2C.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_ServoWriteRead.cpp $(START_DIR)/KcontrolDeploy_ert_rtw/KcontrolDeploy.c $(START_DIR)/KcontrolDeploy_ert_rtw/KcontrolDeploy_data.c $(START_DIR)/KcontrolDeploy_ert_rtw/rtGetInf.c $(START_DIR)/KcontrolDeploy_ert_rtw/rtGetNaN.c $(START_DIR)/KcontrolDeploy_ert_rtw/rt_nonfinite.c /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinotarget/registry/../src/MW_ArduinoHWInit.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinotarget/registry/../scheduler/src/arduinoAVRScheduler.cpp
+SRCS = /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_arduinoI2C.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/MW_ServoWriteRead.cpp $(START_DIR)/KcontrolDeploy_ert_rtw/KcontrolDeploy.c /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinotarget/registry/../src/MW_ArduinoHWInit.cpp /Users/josepfamador/Documents/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinotarget/registry/../scheduler/src/arduinoAVRScheduler.cpp
 
 MAIN_SRC = $(START_DIR)/KcontrolDeploy_ert_rtw/ert_main.c
 
@@ -230,7 +230,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_arduino_digitalio.o MW_arduinoI2C.o io_wrappers.o MW_ServoWriteRead.o KcontrolDeploy.o KcontrolDeploy_data.o rtGetInf.o rtGetNaN.o rt_nonfinite.o MW_ArduinoHWInit.o arduinoAVRScheduler.o
+OBJS = MW_arduino_digitalio.o MW_arduinoI2C.o io_wrappers.o MW_ServoWriteRead.o KcontrolDeploy.o MW_ArduinoHWInit.o arduinoAVRScheduler.o
 
 MAIN_OBJ = ert_main.o
 
@@ -525,23 +525,7 @@ KcontrolDeploy.o : $(START_DIR)/KcontrolDeploy_ert_rtw/KcontrolDeploy.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-KcontrolDeploy_data.o : $(START_DIR)/KcontrolDeploy_ert_rtw/KcontrolDeploy_data.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
 ert_main.o : $(START_DIR)/KcontrolDeploy_ert_rtw/ert_main.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rtGetInf.o : $(START_DIR)/KcontrolDeploy_ert_rtw/rtGetInf.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rtGetNaN.o : $(START_DIR)/KcontrolDeploy_ert_rtw/rtGetNaN.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rt_nonfinite.o : $(START_DIR)/KcontrolDeploy_ert_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
