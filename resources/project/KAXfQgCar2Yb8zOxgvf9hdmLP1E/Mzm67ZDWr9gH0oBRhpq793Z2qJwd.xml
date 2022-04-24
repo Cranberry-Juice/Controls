@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info Type="StartUp" Visible="0" Icon="" File="JA/scripts/pendulum2Dss.m" Name="pendulum2Dss">
+    <Extension Value="5f7f3b0b-5277-417e-8d0a-9b13f909b0e6" Name="StartUpPrev" />
+</Info>
