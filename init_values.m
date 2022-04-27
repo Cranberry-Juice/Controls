@@ -46,8 +46,8 @@ c_Fuel = 2.806e2; % Damper Coeff "   "
 
 % ~~~ In body fixed frame
 l_TV = 0.424; % Distance form CM land to acting point of thrust vector Updated 4/14/22
-dev_x_TV = 0.1; % Deviation from true vertical x
-dev_y_TV = 0.1; % "  " y
+dev_x_TV = 0; % Deviation from true vertical x
+dev_y_TV = 0; % "  " y
 L_TV = [dev_x_TV dev_y_TV l_TV];
 
 % Dependant Variables
