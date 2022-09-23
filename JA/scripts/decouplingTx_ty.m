@@ -15,12 +15,16 @@ Ty = linspace(TyMin, TyMax, nsamples);
 Tx = TY .* tand(TH);
 
 surf(TY, TH, Tx)
-xlabel("T_y (T_y/W)")
-ylabel("\theta")
-zlabel('T_x')
+
+xlabel("T_{vert}/W Ratio")
+ylabel("Vane Angle (deg)")
+zlabel('T_{hori}/W Ratio')
 
 
 Thrust = sqrt(Tx.^2 + TY.^2);
 
 figure
 surf(Tx, TY, Thrust)
+xlabel("T_{hori}/W Ratio")
+ylabel("T_{vert}/W Ratio")
+zlabel('T/W Ratio')
